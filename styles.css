@@ -83,7 +83,7 @@
     padding: 60px 0;
     background: var(--white);
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--light);
+    /* border-bottom: 1px solid var(--light); */
   }
   
   /* Section headings */
@@ -108,39 +108,169 @@
     clear: both;
   }
   
-  /* Tracks */
-  .track {
-    margin-bottom: 40px;
-  }
-  
-  .track h3 {
-    font-size: 1.5rem;
-    color: var(--secondary);
-    margin-bottom: 10px;
-  }
-  
-  .track p {
-    margin-bottom: 15px;
-  }
-  
-  .track .prize {
-    font-weight: bold;
-  }
-  
-  /* Awards */
-  .award {
-    margin-bottom: 40px;
-  }
-  
-  .award h3 {
-    font-size: 1.5rem;
-    color: var(--secondary);
-    margin-bottom: 10px;
-  }
-  
-  .award p {
-    margin-bottom: 10px;
-  }
+/* ========== Updated Hackathon Tracks Layout ========== */
+
+/* Grid container for the tracks */
+.tracks-grid {
+  display: grid;
+  /* Adjust the minmax and repeat to control columns and responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* spacing between cards */
+}
+
+/* Style each track item as a card */
+.track {
+  border: 1px solid var(--light); /* faint border to mimic a "card" look */
+  border-radius: 6px;
+  padding: 20px;
+  background-color: #fff; /* ensure a white card background */
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect (optional) */
+.track:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading inside each card */
+.track h3 {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* Paragraph text in each card */
+.track p {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* “Learn More” link styling */
+.track a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.track a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Updated Awards Layout ========== */
+
+/* Awards section header with a "More Awards" link on the right */
+.awards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.awards-header h2 {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.more-awards {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.more-awards:hover {
+  color: var(--accent);
+}
+
+/* Awards grid layout (similar to the 3-column event cards) */
+.awards-grid {
+  display: grid;
+  /* Adjust columns as needed; this example will create up to 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual "card" style for each award */
+.award-card {
+  border: 1px solid var(--light);
+  padding: 20px;
+  /* Remove rounded corners */
+  border-radius: 0;
+  text-align: left;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect to match the style from your screenshot (optional) */
+.award-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card headings */
+.award-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* Card paragraphs */
+.award-card p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* "Learn More" button styling to resemble the screenshot's look */
+.learn-more {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0; /* remove corners */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.learn-more:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Hidden awards are displayed only after the user clicks "Show More" */
+.hidden-award {
+  display: none;
+}
+
+/* "Show More" button container */
+.show-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* The "Show More" button itself */
+.show-more-btn {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0; /* remove corners */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.show-more-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* ========== Remove Rounded Corners Site-Wide ========== */
+* {
+  border-radius: 0 !important;
+}
+
   
   /* Schedule */
   .schedule-item {

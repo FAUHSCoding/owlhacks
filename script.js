@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.hidden').forEach(element => {
       observer.observe(element);
     });
+
+    const showMoreBtn = document.querySelector(".show-more-btn");
+    const hiddenAwards = document.querySelectorAll(".hidden-award");
+    let isExpanded = false;
+  
+    if (showMoreBtn) {
+      showMoreBtn.addEventListener("click", () => {
+        isExpanded = !isExpanded;
+        hiddenAwards.forEach(card => {
+          card.style.display = isExpanded ? "block" : "none";
+        });
+        showMoreBtn.textContent = isExpanded ? "Show Less" : "Show More";
+      });
+    }
   
     // FAQ Accordion
     const accordionItems = document.querySelectorAll(".accordion-item");

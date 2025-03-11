@@ -39,87 +39,125 @@
   <section id="tracks" class="section hidden">
     <div class="container">
       <h2>Hackathon Tracks</h2>
-      <div class="track">
-        <h3>Web Development</h3>
-        <p>
-          From sleek portfolios to the most cursed websites imaginable, the Web Development track is your playground.
-          Whether you're building the next big thing or just an inside joke in HTML, CSS, and JavaScript, this track
-          is all about bringing your best ideas to the web. Show off your skills, embrace the chaos, and maybe even walk
-          away with a prize.
-        </p>
-      </div>
-      <div class="track">
-        <h3>Hardware</h3>
-        <p>
-          The Hardware track is where you bring your gadgets, microcontrollers, sensors, and all things physical to life.
-          With Arduinos and a variety of sensors available for your hacking pleasure, you’ve got all the tools you need
-          to make something awesome (or just ridiculously fun). Whether you're building a smart toaster or hacking together
-          a sensor network, this track is all about creating functional—or hilariously dysfunctional—hardware projects.
-          Dive into embedded software, Arduino, Raspberry Pi, and anything that can blink, beep, or buzz. Bring your code
-          to the real world and impress us with your creations—or at least with how much you can get to blink before the deadline.
-        </p>
-      </div>
-      <div class="track">
-        <h3>Game Development</h3>
-        <p>
-          Ready to turn your wildest game ideas into playable chaos? The Game Development track is where you get to build
-          everything from simple 2D games to mind-bending experiences. Whether you’re coding your dream game or creating a
-          hilarious mess of pixels and code, this track is all about having fun while making something that (hopefully) works.
-          Use any engine, framework, or game design tool you want—Unity, Godot, you name it. Get ready for a challenge where
-          creativity and gameplay take center stage, and anything can happen.
-        </p>
-      </div>
-      <div class="track">
-        <h3>Open-Ended</h3>
-        <p>
-          The Open-Ended Track is for the hackers who don’t fit neatly into a box. Have a project idea that doesn’t align
-          with any of the other categories? This track is where you can unleash your creativity, experiment, and bring your vision
-          to life without any constraints. Whether you're building a new tool, crafting an unconventional solution, or just
-          hacking together something fun, the Open-Ended Track welcomes all kinds of projects. If you can imagine it, you can build it—
-          no theme, no limitations, just pure hacking potential.
-        </p>
+      <div class="tracks-grid">
+        <div class="track">
+          <h3>Web Development</h3>
+          <p>
+            From sleek portfolios to the most cursed websites imaginable, the Web
+            Development track is your playground. Whether you're building the next big thing
+            or just an inside joke, this track is all about bringing your best ideas to the
+            web.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="track">
+          <h3>Hardware</h3>
+          <p>
+            The Hardware track is where you bring your gadgets, microcontrollers, sensors,
+            and all things physical to life. With Arduinos and a variety of sensors available,
+            you’ve got the tools you need to make something awesome—or just ridiculously fun.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="track">
+          <h3>Game Development</h3>
+          <p>
+            Ready to turn your wildest game ideas into playable chaos? This track is where you
+            get to build everything from simple 2D games to mind-bending experiences. Creativity
+            and gameplay take center stage—anything can happen.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="track">
+          <h3>Open-Ended</h3>
+          <p>
+            For the hackers who don’t fit neatly into a box, the Open-Ended track welcomes any
+            project idea—no theme, no limitations, just pure hacking potential. If you can
+            imagine it, you can build it!
+          </p>
+          <a href="#">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
+  
 
   <section id="awards" class="section hidden">
     <div class="container">
-      <h2>Awards</h2>
-      <div class="award">
-        <h3>Best Beginner Hacks</h3>
-        <p>
-          This award celebrates the freshest ideas from participants just starting their hackathon journey.
-          It’s not about how much you know, but how well you communicate your concept and bring it to life.
-          Creativity and clarity in presentation are key here—if you can explain your idea in a way that makes everyone go,
-          “That’s genius!” you’ve already won half the battle.
-        </p>
-        <p><strong>Placements:</strong> TBD</p>
+
+        <h2>Awards</h2>
+
+  
+      <!-- Awards Grid -->
+      <div class="awards-grid">
+        <!-- 1. Best Beginner Hacks -->
+        <div class="award-card">
+          <h3>Best Beginner Hacks</h3>
+          <p>
+            This award celebrates the freshest ideas from participants just starting their
+            hackathon journey. Creativity and clarity in presentation are key here—if you can
+            explain your idea in a way that makes everyone go, “That’s genius!” you’ve already
+            won half the battle.
+          </p>
+        </div>
+  
+        <!-- 2. Best Advanced Hacks -->
+        <div class="award-card">
+          <h3>Best Advanced Hacks</h3>
+          <p>
+            This award recognizes the most technically impressive projects that push the limits
+            of coding, design, and execution. If your hack blends ingenuity with intricate
+            execution—presenting something that’s both brilliant and functional—this one’s for you.
+          </p>
+        </div>
+  
+        <!-- 3. Track Awards -->
+        <div class="award-card">
+          <h3>Track Awards</h3>
+          <p>
+            Best Web Dev Project, Best Game, Best Hardware Project — these awards recognize the
+            most technically impressive projects in each track. If your hack blends ingenuity
+            with intricate execution, you’ve got a solid shot at these.
+          </p>
+        </div>
+  
+        <!-- 4. Popular Vote Award (hidden by default) -->
+        <div class="award-card hidden-award">
+          <h3>Popular Vote Award</h3>
+          <p>
+            This award is chosen by your fellow hackers. The project with the most votes from
+            participants takes home the prize. May the crowd be ever in your favor!
+          </p>
+        </div>
+  
+        <!-- 5. Most Cursed Code (hidden by default) -->
+        <div class="award-card hidden-award">
+          <h3>Most Cursed Code</h3>
+          <p>
+            This award goes to the hack that might make your eyes bleed, but is too amusing
+            to ignore. Think questionable variable names, bizarre architecture, or
+            unpredictably glitchy results — the more cursed, the better!
+          </p>
+        </div>
+  
+        <!-- 6. Most Useless Project (hidden by default) -->
+        <div class="award-card hidden-award">
+          <h3>Most Useless Project</h3>
+          <p>
+            Celebrating the project that accomplishes absolutely nothing — yet does it in a
+            way that’s hilariously memorable. If your hack solves no real problem (or invents
+            a new one), you might just win this one!
+          </p>
+        </div>
       </div>
-      <div class="award">
-        <h3>Best Advanced Hacks</h3>
-        <p>
-          This award recognizes the most technically impressive projects that push the limits of coding, design,
-          and execution. While complexity is a major factor, we don’t forget about the power of a strong idea.
-          If your hack blends ingenuity with intricate execution, presenting something that’s both brilliant and functional,
-          you’ve got a solid shot at this one.
-        </p>
-        <p><strong>Placements:</strong> TBD</p>
-      </div>
-      <div class="award">
-        <h3>Track Awards</h3>
-        <p>
-          Best Web Dev Project, Best Game, Best Hardware Project - these awards recognize the most technically impressive
-          projects in each track. If your hack blends ingenuity with intricate execution, presenting something that’s both
-          brilliant and functional, you’ve got a solid shot at this one.
-        </p>
-        <p><strong>Placements:</strong> Max 9 (can be adjusted)</p>
-      </div>
-      <div class="award">
-        <h3>Popular Vote Award</h3>
-        <p>Prizes: TBD</p>
+  
+      <!-- "Show More" Button -->
+      <div class="show-more-container">
+        <button class="show-more-btn">Show More</button>
       </div>
     </div>
   </section>
+  
 
   <section id="schedule" class="section hidden">
     <div class="container">

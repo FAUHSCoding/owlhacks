@@ -77,6 +77,13 @@
     background: var(--secondary);
     color: var(--white);
   }
+
+  header .event-ended {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--accent);
+    font-weight: bold;
+  }
   
   /* Sections */
   .section {
@@ -289,6 +296,15 @@
     color: var(--white);
     text-align: center;
     padding: 20px 0;
+  }
+
+  .footer-link {
+    color: var(--light);
+    text-decoration: underline;
+  }
+
+  .footer-link:hover {
+    color: var(--white);
   }
   
   /* On-scroll animations */
